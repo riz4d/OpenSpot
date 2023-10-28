@@ -44,3 +44,11 @@ client_secret = "your-client-secret"
 3. The application will use the Spotify API to fetch the track list from the playlist and pass the track names to ytdl and songs been start downloads
 
 4. You can check the progress of the downloads on the web page.
+
+## Note
+
+- This application is for educational purposes only and should only be used to download songs you have the legal right to access and use.
+
+- The legality of downloading music from YouTube varies by jurisdiction. Be sure to review and comply with your local copyright laws.
+
+- Be respectful of the rights of content creators and use this tool responsibly.

@@ -52,3 +52,9 @@ client_secret = "your-client-secret"
 - The legality of downloading music from YouTube varies by jurisdiction. Be sure to review and comply with your local copyright laws.
 
 - Be respectful of the rights of content creators and use this tool responsibly.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE.md) 
+
+

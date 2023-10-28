@@ -1,0 +1,11 @@
+spotipy
+youtube-search-python
+Flask
+yt-dlp @ https://github.com/yt-dlp/yt-dlp/archive/master.tar.gz
+ffmpeg==1.4
+Pyrebase4
+requests
+requests-oauthlib
+requests-toolbelt
+kfp
+gunicorn

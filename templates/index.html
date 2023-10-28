@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <title>Spotify Playlist DL</title>
+</head>
+
+<body>
+    <h2>Spotify Playlist DL</h2>
+    <div class="form">
+        {% if context.status == "False"  %}
+        <form action="/fetch" method="POST">
+            <div class="form_items">
+                <label for="">Paste Playlist Url Here :  </label>
+                <br>
+                <input name="playlist" id="playlist" type="text">
+            </div>
+            <div class="btn">
+                <button type="submit">Fetch</button>
+            </div>
+        </form>{% endif %}
+        {% if context.status == "True" %}
+        <form action="/" method="post">
+            <div class="form_items result">
+                <input name="playlist" id="playlist" type="text" value="{{context.playlist_url}}" readonly>
+                <p>{{context.playlist_name}}</p>
+                <p>{{context.Owner}}</p>
+                <p>{{context.total}}</p>
+                <div class="btn">
+                    <button type="submit">Download</button>
+                </div>
+            </div>
+            
+        </form>{% endif %}
+    </div>
+        
+
+    
+</body>
+</html>

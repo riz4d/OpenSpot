@@ -32,3 +32,15 @@ client_secret = "your-client-secret"
    python3 app.py
    ```
    The app should be running at localhost
+
+## Usage
+
+1. Open your web browser and go to
+   ```
+   http://localhost
+   ```
+2. Enter a valid Spotify playlist URL in the input field and click the "Download" button.
+
+3. The application will use the Spotify API to fetch the track list from the playlist and pass the track names to ytdl and songs been start downloads
+
+4. You can check the progress of the downloads on the web page.
